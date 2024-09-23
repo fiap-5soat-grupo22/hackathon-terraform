@@ -9,5 +9,5 @@ jobs:
   hackathon:
     uses: fiap-5soat-grupo22/workflows-templates/.github/workflows/terraform.yml@main
     with:
-      tenant : ${{ fromJSON(vars.HACKATHON).tenant }}
-      config : ${{ toJSON(fromJSON(vars.HACKATHON).production) }}
+      tenant: ${{ fromJSON(vars.HACKATHON).tenant }}
+      config: ${{ toJSON(fromJSON(vars.HACKATHON).production) }}
