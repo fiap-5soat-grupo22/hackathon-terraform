@@ -42,7 +42,7 @@ resource "google_pubsub_subscription" "consulta_solicitada" {
   }
 
   dead_letter_policy {
-    dead_letter_topic = google_pubsub_topic.consulta_compensatorio.id
+    dead_letter_topic     = google_pubsub_topic.consulta_compensatorio.id
     max_delivery_attempts = 5
 
   }
@@ -154,7 +154,7 @@ resource "google_pubsub_subscription" "consulta_solicitada_erro" {
 
     attributes = {
       x-goog-version = "v1"
-      teste = "teste"
+      teste          = "teste"
     }
   }
 }
