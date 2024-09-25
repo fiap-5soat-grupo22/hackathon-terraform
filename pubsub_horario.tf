@@ -33,7 +33,7 @@ resource "google_pubsub_subscription" "horario_reservado" {
   }
 
   push_config {
-    push_endpoint = "https://notificacoes-api-91827266597.southamerica-east1.run.app"
+    push_endpoint = "https://clientes-api-91827266597.southamerica-east1.run.app"
 
     attributes = {
       x-goog-version = "v1"
